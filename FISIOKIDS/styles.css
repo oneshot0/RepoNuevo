@@ -1,0 +1,429 @@
+/* ==========================================================
+   FISIOKIDS - Estilos generales
+   ========================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green-dark:   #1b5e20;
+  --green-mid:    #2e7d32;
+  --green-light:  #4caf50;
+  --green-soft:   #a5d6a7;
+  --green-pale:   #e8f5e9;
+  --white:        #ffffff;
+  --text-dark:    #1a1a1a;
+  --text-mid:     #4a4a4a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--green-pale);
+}
+
+/* ==========================================================
+   NAVEGACIÓN
+   ========================================================== */
+nav {
+  background-color: var(--green-mid);
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.nav-brand .turtle-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.nav-brand span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--green-soft);
+}
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+.hero {
+  background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-light) 100%);
+  color: var(--white);
+  padding: 80px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  min-height: 520px;
+}
+
+.hero-text {
+  max-width: 520px;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.hero-text h1 span {
+  color: var(--green-soft);
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 32px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--white);
+  color: var(--green-dark);
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Mascota tortuga */
+.hero-mascot {
+  text-align: center;
+  animation: floatTurtle 3s ease-in-out infinite;
+}
+
+.hero-mascot .mascot-emoji {
+  font-size: 10rem;
+  line-height: 1;
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.3));
+}
+
+.hero-mascot .mascot-name {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  letter-spacing: 1px;
+}
+
+@keyframes floatTurtle {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-14px); }
+}
+
+/* ==========================================================
+   SECCIÓN: ¿QUÉ ES EL TEA?
+   ========================================================== */
+.about-tea {
+  background: var(--white);
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.section-label {
+  display: inline-block;
+  background: var(--green-pale);
+  color: var(--green-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.about-tea h2 {
+  font-size: 2rem;
+  color: var(--green-dark);
+  margin-bottom: 16px;
+}
+
+.about-tea p {
+  font-size: 1rem;
+  color: var(--text-mid);
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+/* ==========================================================
+   SECCIÓN: SERVICIOS
+   ========================================================== */
+.services {
+  background: var(--green-pale);
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  color: var(--green-dark);
+  margin-bottom: 10px;
+}
+
+.services .intro {
+  font-size: 0.95rem;
+  color: var(--text-mid);
+  margin-bottom: 48px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 36px 28px;
+  box-shadow: 0 4px 16px rgba(46,125,50,0.12);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(46,125,50,0.2);
+}
+
+.card-icon {
+  font-size: 2.8rem;
+  margin-bottom: 14px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  color: var(--green-dark);
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  line-height: 1.6;
+}
+
+/* ==========================================================
+   SECCIÓN: ¿POR QUÉ FISIOKIDS?
+   ========================================================== */
+.why-us {
+  background: var(--green-mid);
+  color: var(--white);
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.why-us h2 {
+  font-size: 2rem;
+  margin-bottom: 48px;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.reason {
+  background: rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 28px 20px;
+}
+
+.reason .reason-icon {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+}
+
+.reason h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.reason p {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.6;
+}
+
+/* ==========================================================
+   SECCIÓN: CONTACTO
+   ========================================================== */
+.contact {
+  background: var(--white);
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: var(--green-dark);
+  margin-bottom: 8px;
+}
+
+.contact > p {
+  font-size: 0.95rem;
+  color: var(--text-mid);
+  margin-bottom: 36px;
+}
+
+.contact-form {
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1.5px solid var(--green-soft);
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  outline: none;
+  transition: border-color 0.25s;
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--green-light);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-submit {
+  background: var(--green-light);
+  color: var(--white);
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.25s, transform 0.15s;
+}
+
+.btn-submit:hover {
+  background: var(--green-mid);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+footer {
+  background: var(--green-dark);
+  color: rgba(255,255,255,0.75);
+  text-align: center;
+  padding: 28px 40px;
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+footer strong {
+  color: var(--green-soft);
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 24px;
+    gap: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-mascot .mascot-emoji {
+    font-size: 7rem;
+  }
+
+  nav {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+}
