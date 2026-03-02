@@ -1,2 +1,2 @@
-# ReponNuevo
+# RepoNuevo
 Repo de practica
