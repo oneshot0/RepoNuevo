@@ -1,0 +1,161 @@
+/* ==========================================================
+   ESTILOS GENERALES - Reset y configuración base
+   ========================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------------------------------
+   BODY - Fondo con gradiente animado y centrado de contenido
+   ---------------------------------------------------------- */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460, #533483);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Animación del fondo en movimiento */
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ==========================================================
+   TARJETA DE LOGIN - Contenedor principal del formulario
+   ========================================================== */
+.login-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* ----------------------------------------------------------
+   ENCABEZADO - Título e icono de la tarjeta
+   ---------------------------------------------------------- */
+.login-card .logo {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.login-card h1 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+.login-card .subtitle {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.55);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* ==========================================================
+   FORMULARIO - Grupos de campo (label + input)
+   ========================================================== */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Etiquetas de los campos */
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* ----------------------------------------------------------
+   CAMPOS DE TEXTO (usuario y contraseña)
+   ---------------------------------------------------------- */
+.form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+/* Estado de foco: resalta el campo activo */
+.form-group input:focus {
+  border-color: #a78bfa;
+  background: rgba(167, 139, 250, 0.12);
+}
+
+/* Placeholder con color más tenue */
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* ==========================================================
+   BOTÓN DE INICIAR SESIÓN - Al final del formulario
+   ========================================================== */
+.btn-login {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.15s ease;
+}
+
+/* Efecto hover: el botón sube levemente */
+.btn-login:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Efecto al hacer clic: el botón baja */
+.btn-login:active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ==========================================================
+   PIE DE LA TARJETA - Enlace de recuperación de contraseña
+   ========================================================== */
+.login-footer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.login-footer a {
+  color: #a78bfa;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
