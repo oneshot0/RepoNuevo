@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOLA MUNDO - Retro</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(45deg, #FF6B35, #F7931E, #FDB833, #F7931E, #FF6B35);
+      background-size: 400% 400%;
+      animation: gradientShift 8s ease infinite;
+      font-family: 'Courier New', monospace;
+      overflow: hidden;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      text-align: center;
+      text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 5rem;
+      color: #00FFE0;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      animation: flicker 0.15s infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.8; }
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: #FFD700;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>HOLA MUNDO</h1>
+    <p>► Bienvenido al futuro ◄</p>
+  </div>
+</body>
+</html>
