@@ -1,2 +1,5 @@
-# RepoNuevo
-Repo de practica
+#Mi repo del curso 
+
+Mi repo yeiii!!!
+
+construcción local para github
