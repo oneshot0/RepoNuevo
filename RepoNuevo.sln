@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FISIOKIDS", "FISIOKIDS", "{9160B9B9-E02E-9F02-3905-4DC9C4AB1B2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "probando", "FISIOKIDS\probando\probando.csproj", "{3156A895-635C-58B7-B16F-75E563F7153F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3156A895-635C-58B7-B16F-75E563F7153F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3156A895-635C-58B7-B16F-75E563F7153F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3156A895-635C-58B7-B16F-75E563F7153F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3156A895-635C-58B7-B16F-75E563F7153F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3156A895-635C-58B7-B16F-75E563F7153F} = {9160B9B9-E02E-9F02-3905-4DC9C4AB1B2D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6BCBD7D0-E53D-4DCC-A1B3-2698EC899DB6}
+	EndGlobalSection
+EndGlobal
