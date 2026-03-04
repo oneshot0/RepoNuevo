@@ -21,3 +21,5 @@ gitGraph
   commit
   commit
 ```
+
+Cambios desde el editor
